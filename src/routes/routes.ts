@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         Component: TransferPage,
       },
       {
-        path: "top-up",
+        path: "deposit",
         Component: TopUpPage,
       },
     ],
