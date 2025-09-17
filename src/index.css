@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Font/Inter.ttf") format("truetype");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-display: "Inter";
+  --color-background-default: #eceff3;
+  --primary-text-color: #3a3d44;
+  --text-color: #6b6e75;
+  --primary-color: #7662ea;
+  --primary-color-hover: #6932d4;
+  --button-primary-color: #7662ea;
+  --umoney-primary-color: #004831;
+  --umoney-primary-color-2: #006041;
+  --umoney-secondary-color: #AFCA31;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+p {
+  margin: 0 !important;
+}
