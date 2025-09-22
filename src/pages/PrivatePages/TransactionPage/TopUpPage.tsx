@@ -163,7 +163,7 @@ const TopUpPage = () => {
                 {"Bank Name"}
               </label>
               <select
-                defaultValue={"SMBC"}
+                value={senderData.source}
                 onChange={(e) => handleInputChange("source", e.target.value)}
                 className={
                   "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--umoney-primary-color-2)] focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white font-mono"
