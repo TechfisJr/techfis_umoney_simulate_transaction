@@ -1,9 +1,14 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, redirect } from "react-router";
+
 
 import { PrivateLayout } from "../layouts";
 import { TopUpPage, TransferPage } from "../pages";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    loader: () => redirect("/transaction/deposit"),
+  },
   {
     path: "/transaction",
     Component: PrivateLayout,
